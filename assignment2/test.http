@@ -1,0 +1,27 @@
+// Get all Products
+GET http://localhost:4000/api/v1/products
+
+###
+// Create a product
+POST http://localhost:4000/api/v1/products
+content-type: application/json
+
+{
+    "name":"Macbook",
+    "price": 1000000
+}
+
+
+###
+// Update Products
+PATCH http://localhost:4000/api/v1/products/89ad6e88-4d69-4e41-bfb1-3d827cd08fad
+content-type: application/json
+
+{
+    "name":"Macbook M2 Pro",
+    "price": 1000000000
+}
+
+###
+// Delete Product By ID
+DELETE http://localhost:4000/api/v1/products/89ad6e88-4d69-4e41-bfb1-3d827cd08fad
